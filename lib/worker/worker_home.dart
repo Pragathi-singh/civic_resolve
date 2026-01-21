@@ -3,15 +3,17 @@ import 'available_issues.dart';
 import 'assigned_issues.dart';
 
 class WorkerHome extends StatelessWidget {
+  const WorkerHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Worker Home")),
+      appBar: AppBar(title: const Text("Worker Home")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ElevatedButton(
-            child: Text("Available Issues"),
+            child: const Text("Available Issues"),
             onPressed: () {
               Navigator.push(
                 context,
@@ -19,8 +21,9 @@ class WorkerHome extends StatelessWidget {
               );
             },
           ),
+          const SizedBox(height: 20),
           ElevatedButton(
-            child: Text("My Assigned Issues"),
+            child: const Text("My Assigned Issues"),
             onPressed: () {
               Navigator.push(
                 context,
