@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class UserHome extends StatelessWidget {
+class WorkerHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("User Home")),
+      appBar: AppBar(title: Text("Worker Home")),
       body: Center(
-        child: Text("Welcome User!"),
+        child: Text("Welcome Worker!"),
       ),
     );
   }
