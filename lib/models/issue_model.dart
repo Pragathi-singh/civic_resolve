@@ -30,7 +30,8 @@ class IssueModel {
       description: data['description'] ?? '',
       category: data['category'] ?? '',
       status: data['status'] ?? 'reported',
-      createdAt: (data['createdAt'] as Timestamp).toDate(),
+        createdAt:
+          (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
       assignedWorkerId: data['assignedWorkerId'],
       reportedBy: data['reportedBy'],
     );
